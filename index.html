@@ -2,6 +2,134 @@
 	<head>
 	</head>
 	<body>
-		<h1>Hi!</h1>
+		<div class="main">
+			<ul class="header">
+				<li class="selected">
+					<a href="/">Home</a>
+				</li>
+				<li>
+					<a href="/contact">Contact</a>
+				</li>
+			</ul>
+			<img class="cover" src="/images/business.svg"/>
+			<!-- svg -->
+			<h1 class="title">
+				Paul Kuruvilla
+			</h1>
+			<h2 class="subtitle">
+				I like writing <span class="highlight">software</span><span class="dot">.</span>
+			</h2>
+		</div>
+
+		<style>
+			@font-face {
+				font-family: "Black Jack";
+				src: url('/fonts/blackjack-webfont.woff') format('woff');
+				font-weight: normal;
+				font-style: normal;
+			}
+
+			@font-face {
+				font-family: "Open Sans";
+				src: url('OpenSans-Bold-webfont.woff') format('woff');
+				font-weight: bold;
+				font-style: normal;
+			}
+
+			@font-face {
+				font-family: "Open Sans";
+				src: url('OpenSans-Light-webfont.woff') format('woff');
+				font-weight: lighter;
+				font-style: normal;
+			}
+
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				margin: 0px;
+				background-color: #f7fff7;
+				font-family: 'Open Sans', sans-serif;
+				color: #1a535c;
+			}
+
+			.bg {
+				position: absolute;
+				opacity: 0;
+				left: 320px;
+			}
+
+			.header {
+				// Mobile? padding: 15px 15px 15px 15px;
+				padding: 25px 25px 25px 25px;
+			}
+
+			.header li {
+				// font-size: 14px;
+				font-size: 16px;
+				margin: 0px 10px 0px 10px;
+				display: inline-block;
+				list-style: none;
+			}
+
+			.header li.selected {
+				border-bottom: 3px solid #FFE66D;
+			}
+
+			.header li:hover {
+				border-bottom: 3px solid #4ecdc4;;
+			}
+
+			.header li a {
+				text-decoration: none;
+				color: #1a535c;
+			}
+
+			img.cover {
+				//width: 120px;
+				width: 160px;
+				display: block;
+				margin: 30 auto 0 auto;
+			}
+
+			.main {
+				background-color: #ffffff;
+				max-width: 800px;
+				margin: 0 auto 0 auto;
+				height: 100vh;
+			}
+
+			.title {
+				text-align: center;
+				color: #4ecdc4;
+				font-family: "Black Jack";
+				// font-size: 60px;
+				font-size: 80px;
+				line-height: 80px;
+				margin: 0px;
+			}
+
+			.subtitle {
+				margin: 0px;
+				text-align: center;
+				font-weight: lighter;
+				// font-size: 20px;
+				font-size: 24px;
+			}
+
+			.subtitle .highlight {
+				font-weight: bold;
+				color: #ff6b6b;
+				// font-size: 25px;
+				font-size: 32px;
+			}
+
+			.subtitle .dot {
+				font-size: 25px;
+				font-weight: bold;
+				color: #FFE66D;
+			}
+		</style>
 	</body>
 </html>
