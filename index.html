@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<div class="main">
@@ -61,13 +62,11 @@
 			}
 
 			.header {
-				// Mobile? padding: 15px 15px 15px 15px;
-				padding: 25px 25px 25px 25px;
+				padding: 25px; /** 15px on mobile **/
 			}
 
 			.header li {
-				// font-size: 14px;
-				font-size: 16px;
+				font-size: 16px; /** 14px on mobile **/
 				margin: 0px 10px 0px 10px;
 				display: inline-block;
 				list-style: none;
@@ -87,8 +86,7 @@
 			}
 
 			img.cover {
-				//width: 120px;
-				width: 160px;
+				width: 160px; /** 120px on mobile **/
 				display: block;
 				margin: 30 auto 0 auto;
 			}
@@ -104,9 +102,8 @@
 				text-align: center;
 				color: #4ecdc4;
 				font-family: "Black Jack";
-				// font-size: 60px;
-				font-size: 80px;
-				line-height: 80px;
+				font-size: 80px; /** 54px on mobile **/
+				line-height: 80px; /** 54px on mobile **/
 				margin: 0px;
 			}
 
@@ -114,15 +111,41 @@
 				margin: 0px;
 				text-align: center;
 				font-weight: lighter;
-				// font-size: 20px;
-				font-size: 24px;
+				font-size: 24px; /** 18px on mobile **/
 			}
 
 			.subtitle .highlight {
 				font-weight: bold;
 				color: #ff6b6b;
-				// font-size: 25px;
-				font-size: 32px;
+
+				font-size: 32px; /** 25px on mobile **/
+			}
+
+			@media screen and (max-width: 640px) {
+				.header {
+					padding: 15px;
+				}
+
+				.header li {
+					font-size: 14px;
+				}
+
+				img.cover {
+					width: 120px;
+				}
+
+				.title {
+					font-size: 54px;
+					line-height: 54px;
+				}
+
+				.subtitle {
+					font-size: 18px;
+				}
+
+				.subtitle .highlight {
+					font-size: 25px;
+				}
 			}
 
 			.subtitle .dot {
